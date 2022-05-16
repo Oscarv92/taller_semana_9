@@ -1,0 +1,38 @@
+<p>
+    <mat-toolbar color="primary">
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/inicio">
+              <mat-icon><i class="bi bi-house-fill"></i></mat-icon>
+              <span>Inicio</span>
+            </button>
+            <button mat-menu-item routerLink="/formulario">
+              <mat-icon><i class="bi bi-file-text-fill"></i></mat-icon>
+              <span>Donaciones</span>
+            </button>
+            <button mat-menu-item routerLink="/calculadora">
+              <mat-icon><i class="bi bi-calculator-fill"></i></mat-icon>
+              <span>Calculadora</span>
+            </button>
+            <button mat-menu-item routerLink="/componente">
+                <mat-icon><i class="bi bi-patch-question-fill"></i></mat-icon>
+                <span>Carrusel</span>
+              </button>
+        </mat-menu>
+
+        <div>
+            <span routerLink="/inicio">Taller Nº9</span>
+        </div>
+
+        <span class="example-spacer"></span>
+        <button routerLink="/inicio" mat-icon-button class="example-icon text-dark">
+            <i class=" bi bi-house-fill "></i>
+      </button>
+        <button mat-icon-button class="example-icon ">
+          <a href="https://github.com/Oscarv92 " target="_black "><i class="bi bi-github text-dark"></i></a>
+      </button>
+    </mat-toolbar>
+</p>

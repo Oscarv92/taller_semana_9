@@ -1,0 +1,55 @@
+<div class="container col-5">
+
+    <div class=" container ">
+        <div *ngIf="mensaje_ok ">
+            <div class="alert alert-primary alert-dismissible fade show " role="alert ">
+                <strong>{{mensaje_ok}}</strong>
+                <button type="button " class="btn-close " data-bs-dismiss="alert " aria-label="Close "></button>
+            </div>
+        </div>
+
+        <div *ngIf="mensaje_errornum1 ">
+            <div class="alert alert-danger alert-dismissible fade show " role="alert ">
+                <strong>{{mensaje_errornum1}}</strong>
+                <button type="button " class="btn-close " data-bs-dismiss="alert " aria-label="Close "></button>
+            </div>
+        </div>
+
+        <div *ngIf="mensaje_errornum2 ">
+            <div class="alert alert-danger alert-dismissible fade show " role="alert ">
+                <strong>{{mensaje_errornum2}}</strong>
+                <button type="button " class="btn-close " data-bs-dismiss="alert " aria-label="Close "></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group my-5 ">
+        <div class="row ">
+
+            <div class="col-12 ">
+                <label for=" ">Número 1</label>
+                <input type="number " class="form-control " placeholder="Ingrese un número " [(ngModel)]="num1 ">
+            </div>
+
+            <div class="col-12 ">
+                <label for=" ">Número 2</label>
+                <input type="number " class="form-control " placeholder="Ingrese un número " [(ngModel)]="num2 ">
+            </div>
+
+            <div class="col-12 my-2 ">
+                <input type="Button " value="sumar " class="btn btn-primary col-5 m-1 " (click)="sumar() ">
+                <input type="Button " value="restar " class="btn btn-success col-5 m-1 " (click)="restar() ">
+                <input type="Button " value="multiplicar " class="btn btn-warning col-5 m-1 " (click)="multiplicar() ">
+                <input type="Button " value="dividir " class="btn btn-danger col-5 m-1 " (click)="dividir() ">
+            </div>
+
+            <div class="col-12 ">
+                <label for=" ">Aqui se imprime el resultado</label>
+                <input type="number " class="form-control " placeholder="Resultado :{{resultado}} ">
+
+            </div>
+
+        </div>
+    </div>
+</div>

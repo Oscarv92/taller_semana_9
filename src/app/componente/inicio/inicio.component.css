@@ -1,0 +1,44 @@
+.creador h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #006E7F;
+}
+
+.creador h3 {
+    text-align: center;
+    font-size: 45px;
+    color: #001E6C;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar img {
+    width: 300px;
+    height: 300px;
+    clip-path: circle(20% at center);
+    transition-property: clip-path;
+    transition-duration: 3s;
+}
+
+.cont_avatar:hover img {
+    clip-path: circle(100% at center);
+}
+
+.cont_git {
+    text-align: center;
+}
+
+.cont_git h3 {
+    font-size: 40px;
+}
+
+.cont_icono {
+    text-align: center;
+}
+
+.cont_icono i {
+    font-size: 70px;
+    color: #170055;
+}

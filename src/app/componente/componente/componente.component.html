@@ -1,0 +1,58 @@
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide carrusel" style="height: 600px; width: 600px" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Akita Inu</mat-card-title>
+                        <mat-card-subtitle>Raza Canina</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://t1.ea.ltmcdn.com/es/razas/7/0/1/akita-inu-o-akita-japones_107_0_600.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p class="texto">
+                            El Akita o Akita Inu (秋田 犬?), que se traduce como 'perro de Akita',es una raza canina originaria de Japón, donde se considera tesoro nacional. Se conoce la raza por ese nombre, ya que proviene de la prefectura de Akita, situada en el norte de Japón. Inicialmente,
+                            el Akita fue un perro de caza mayor. Durante generaciones, los guerreros de Japón lo empleaban como perro de defensa, de ataque y, a su vez, para cazar osos. El Akita Inu se considera una raza aparte del Akita Americano.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions class="like_share">
+                        <button (click)="likeInu()" mat-button><i class="bi bi-hand-thumbs-up-fill"></i></button>
+                        <button routerLink="/formulario" mat-button>Donativo <i class="bi bi-hand-index-fill"></i></button>
+                    </mat-card-actions>
+                </mat-card>
+
+            </div>
+            <div class="carousel-item">
+
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Akita Americano</mat-card-title>
+                        <mat-card-subtitle>Raza Canina</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://www.perrosdomesticos.com/wp-content/uploads/2019/09/Akita-americano.png" style="height: 400px; width: 400px" alt="Akita Inu">
+                    <mat-card-content>
+                        <p class="texto">
+                            El akita americano es una variante del akita inu procedente de las regiones septentrionales y montañosas de Japón. La cepa americana es conocida simplemente como akita. Esta variante de la raza muestra todo tipo de colores a diferencia del akita japonés.
+                            Es una raza muy resistente al frío. Si estás pensando en adoptar un akita americano, has entrado al sitio adecuado. En esta ficha de ExpertoAnimal te vamos a hacer un repaso general del carácter, características, educación
+                            y cuidados del akita americano.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions class="like_share">
+                        <button (click)="likeAme()" mat-button><i class="bi bi-hand-thumbs-up-fill"></i></button>
+                        <button routerLink="/formulario" mat-button>Donativo <i class="bi bi-hand-index-fill"></i></button>
+                    </mat-card-actions>
+                </mat-card>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
